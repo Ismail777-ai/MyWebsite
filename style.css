@@ -1,0 +1,262 @@
+
+/* ADMIN PANEL */
+
+.admin-body {
+    background: #080e1b;
+}
+
+.admin-container {
+    width: 88%;
+    max-width: 1250px;
+    margin: 55px auto;
+}
+
+.admin-heading {
+    margin-bottom: 35px;
+}
+
+.admin-heading h1 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.admin-heading p {
+    color: #9eacc1;
+}
+
+.admin-label {
+    color: #36dfbd;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: #142138;
+    border: 1px solid #293c54;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.stat-card span {
+    color: #aab9cb;
+    font-size: 14px;
+}
+
+.stat-card h2 {
+    color: #36dfbd;
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+.admin-form-section,
+.admin-list-section {
+    background: #111e32;
+    border: 1px solid #293c54;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 35px;
+}
+
+.admin-form-section h2,
+.admin-list-section h2 {
+    margin-bottom: 12px;
+}
+
+.admin-form-section > p {
+    color: #9eacc1;
+    margin-bottom: 25px;
+}
+
+#articleForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#articleForm label {
+    color: #d5dfeb;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+#articleForm input,
+#articleForm select,
+#articleForm textarea {
+    width: 100%;
+    background: #0b1629;
+    border: 1px solid #354862;
+    border-radius: 8px;
+    padding: 14px;
+    color: white;
+    font-family: inherit;
+    outline: none;
+}
+
+#articleForm textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+#articleForm input:focus,
+#articleForm textarea:focus,
+#articleForm select:focus {
+    border-color: #36dfbd;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.cancel-btn {
+    padding: 15px 22px;
+    background: #34445b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.admin-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 15px;
+    background: #17263c;
+    border: 1px solid #293c54;
+    border-radius: 12px;
+}
+
+.admin-article h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.admin-article p {
+    color: #36dfbd;
+    font-size: 12px;
+}
+
+.admin-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.edit-btn,
+.delete-btn {
+    border: none;
+    border-radius: 7px;
+    padding: 11px 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.edit-btn {
+    background: #36dfbd;
+    color: #07131c;
+}
+
+.delete-btn {
+    background: #a83c4b;
+    color: white;
+}
+
+/* ALOHIDA MAQOLA SAHIFASI */
+
+.article-page {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #36dfbd;
+    margin-bottom: 35px;
+}
+
+.article-detail {
+    background: #111e32;
+    border: 1px solid #293c54;
+    border-radius: 18px;
+    padding: 45px;
+    margin-bottom: 40px;
+}
+
+.article-big-icon {
+    font-size: 65px;
+    margin-bottom: 25px;
+}
+
+.article-detail h1 {
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.3;
+    margin: 20px 0;
+}
+
+.article-description {
+    color: #9eacc1;
+    font-size: 17px;
+    line-height: 1.8;
+    border-bottom: 1px solid #293c54;
+    padding-bottom: 25px;
+}
+
+.article-content {
+    padding-top: 25px;
+}
+
+.article-content p {
+    color: #d0d9e6;
+    font-size: 17px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+/* TELEFON UCHUN */
+
+@media (max-width: 800px) {
+    .admin-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admin-container {
+        width: 92%;
+    }
+
+    .admin-article {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .article-detail {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .admin-form-section,
+    .admin-list-section {
+        padding: 18px;
+    }
+}
